@@ -1,1 +1,11 @@
 <p>email works!</p>
+
+<section>
+  <angular-editor
+    [placeholder]="'Enter text here...'"
+    [(ngModel)]="htmlContent"
+    [config]="editorConfig"
+  ></angular-editor>
+
+  <button (click)="logData()">Submit</button>
+</section>
