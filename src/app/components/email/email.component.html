@@ -1,11 +1,36 @@
 <p>email works!</p>
+TRY AND ADD THE ANGULAR FORM THAT CHECKS FOR A VALID EMAIL!!!!!!!!!
 
 <section>
-  <angular-editor
-    [placeholder]="'Enter text here...'"
-    [(ngModel)]="htmlContent"
-    [config]="editorConfig"
-  ></angular-editor>
+  <div class="email-div">
+    <span>Email</span>
+    <input
+      #toWho
+      [ngClass]="{ errorText: shouldErrorShow }"
+      class="toWho"
+      (keyup)="recipientChanges()"
+      type="text"
+      placeholder="Recipients"
+    />
+    <hr />
+    <input #subject placeholder="Subject" type="text" id="subject" />
+    <angular-editor
+      [placeholder]="'Email content here...'"
+      [(ngModel)]="htmlContent"
+      [config]="editorConfig"
+    ></angular-editor>
 
-  <button (click)="logData()">Submit</button>
+    <button #sendEmailButton (click)="sendEmail()">Send</button>
+  </div>
+
+  <!-- modal pop up. not finished. add later if I want.
+     <div *ngIf="showDialog">
+    <dialog open>
+      <h1>Error</h1>
+      <p>Please specify at least one recipient.</p>
+      <form method="dialog">
+        <button>OK</button>
+      </form>
+    </dialog>
+  </div> -->
 </section>
