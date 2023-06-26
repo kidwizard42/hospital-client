@@ -26,6 +26,9 @@ import { FormsModule } from '@angular/forms';
     MatButtonModule,
     MatIconModule,
     BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    AngularEditorModule,
     RouterModule.forRoot([
       { path: '', component: HomePageComponent, pathMatch: 'full' },
       { path: 'email', component: EmailComponent },
