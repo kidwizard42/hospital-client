@@ -1,0 +1,43 @@
+.email-div {
+  //   background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+button {
+  color: whitesmoke;
+  background-color: #0b67d1;
+  padding: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+  max-width: 70px;
+  border-radius: 12px;
+  border: none;
+}
+
+.toWho {
+  border: 2px solid white;
+}
+.errorText {
+  border: 2px solid red;
+}
+button:hover {
+  background-color: green;
+}
+button:disabled {
+  cursor: default;
+  background-color: gray;
+}
+hr {
+  margin: 0;
+  background-color: rgb(204, 204, 204);
+  border: none;
+  height: 1px;
+}
+
+input {
+  padding: 8px;
+  border: none;
+  // border-radius: 12px;
+}
