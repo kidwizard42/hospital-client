@@ -12,6 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularEditorModule } from '@kolkov/angular-editor';
 import { FormsModule } from '@angular/forms';
+import { ConnectComponent } from './components/connect/connect.component';
 
 @NgModule({
   declarations: [
