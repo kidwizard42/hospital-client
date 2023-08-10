@@ -124,8 +124,6 @@ export class EmailComponent implements AfterViewInit {
       this.shouldErrorShow = true;
       this.sendEmailButton.nativeElement.disabled = true;
     }
-
-    // console.log(this.to.nativeElement.innerHTML);
   }
 }
 
